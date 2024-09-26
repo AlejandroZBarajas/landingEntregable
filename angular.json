@@ -43,6 +43,7 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "https://alejandrozbarajas.github.io/landingEntregable/",
               "budgets": [
                 {
                   "type": "initial",
@@ -99,8 +100,18 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+          "baseHref": "https://alejandrozbarajas.github.io/landingEntregable/",
+          "repo": "https://github.com/alejandrozbarajas/landingEntregable.git"
+      }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "539859bd-b582-4f9b-a66f-dcad54d66452"
   }
 }
